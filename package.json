@@ -1,0 +1,20 @@
+{
+  "name": "pomo-ink",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ink": "^6.2.0",
+    "react": "^19.1.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.4"
+  }
+}
