@@ -1,20 +1,33 @@
 {
-  "name": "pomo-ink",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "devlog-tui",
+  "version": "0.1.0",
+  "description": "A developer's diary, journal, habit and focus (pomodoro) tracker for the terminal.",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "devlog": "dist/devlog.js"
   },
-  "keywords": [],
-  "author": "",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsx src/cli.jsx",
+    "dev": "tsx src/cli.jsx",
+    "build": "esbuild src/cli.jsx --bundle --platform=node --format=esm --packages=external --outfile=dist/devlog.js --banner:js=\"#!/usr/bin/env node\"",
+    "prepare": "npm run build",
+    "test": "node --import tsx --test test/*.test.js"
+  },
+  "keywords": ["journal", "diary", "pomodoro", "productivity", "tui", "developer", "ink"],
   "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "ink": "^6.2.0",
     "react": "^19.1.1"
   },
   "devDependencies": {
+    "esbuild": "^0.25.0",
+    "ink-testing-library": "^4.0.0",
     "tsx": "^4.20.4"
   }
 }
