@@ -66,7 +66,7 @@ Every command works without opening the TUI, so you can log from a shell alias, 
 If the TUI is open, it reloads within a second.
 
 ```sh
-devlog log "til: \`git worktree\` lets you check out two branches"
+devlog log "til: `git worktree` lets you check out two branches"
 devlog log "blocker: e2e suite flaky on CI"
 devlog task "!! fix login redirect #auth"
 devlog tasks && devlog done 1
@@ -93,19 +93,19 @@ It shows your own commits on all branches, matched by `git config user.email` or
 
 ## Android app & web version
 
-\`mobile/\` holds a phone version of devlog. It has the same journal, logs, mood, habits, tasks and focus timer, plus a streak heatmap and Markdown export. It shares its core logic with the terminal app (\`src/lib\`).
+`mobile/` holds a phone version of devlog. It has the same journal, logs, mood, habits, tasks and focus timer, plus a streak heatmap and Markdown export. It shares its core logic with the terminal app (`src/lib`).
 
 - **Web:** https://devlog-journal.vercel.app (data stays in your browser)
 - **Android:** sideload the APK from a build, or build one yourself:
 
-\`\`\`sh
+```sh
 cd mobile
 npm install
 npm run android:apk   # needs the Android SDK (ANDROID_HOME); output: android/app/build/outputs/apk/debug/app-debug.apk
-\`\`\`
+```
 
-The APK is debug-signed, which is fine for installing on your own phone. For the Play Store you'd create a release keystore and run \`./gradlew bundleRelease\`.
-To move your terminal data to the phone, open Settings, choose **Restore from file**, and pick \`~/.devlog/data.json\`.
+The APK is debug-signed, which is fine for installing on your own phone. For the Play Store you'd create a release keystore and run `./gradlew bundleRelease`.
+To move your terminal data to the phone, open Settings, choose **Restore from file**, and pick `~/.devlog/data.json`.
 
 ## Development
 
