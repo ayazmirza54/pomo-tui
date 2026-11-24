@@ -1,0 +1,13 @@
+{
+  "appId": "dev.devlog.journal",
+  "appName": "devlog",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#10141d"
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "iconColor": "#e8a33d"
+    }
+  }
+}

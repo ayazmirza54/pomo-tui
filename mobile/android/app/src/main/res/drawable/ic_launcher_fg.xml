@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- devlog ">_" prompt mark, drawn inside the adaptive-icon safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:strokeColor="#1B1306" android:strokeWidth="7" android:fillColor="#00000000"
+        android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M37,41 L50,54 L37,67" />
+    <path android:fillColor="#1B1306"
+        android:pathData="M57,63.5 L71,63.5 A3.5,3.5 0 0 1 71,70.5 L57,70.5 A3.5,3.5 0 0 1 57,63.5 Z" />
+</vector>
